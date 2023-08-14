@@ -109,7 +109,7 @@
 .diplo__btn-actions {
   display: flex;
   justify-content: flex-end;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 1rem 1rem 0;
 }
 
 .btn-action {
@@ -127,7 +127,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (min-width: 481px) and (max-width: 768px) { 
   .diplo__main {
     padding: 1rem;
   }
@@ -137,15 +137,9 @@
   }
   
   .diplo__btn-actions {
-    flex-direction: column;
-    align-items: stretch; 
+    margin-top: 2rem;
   }
 
-  .btn-action {
-    width: 100%;
-    margin-top: 0.5rem;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 480px) { 
@@ -158,6 +152,7 @@
   }
 
   .diplo__btn-actions {
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 1rem 1rem 0;
+
   }
 }

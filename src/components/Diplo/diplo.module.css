@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.diplo__main {
+  background-color: #ECE6F0;
+  padding: 1.5rem;  
+  border-radius: 1.7rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-width: 18.5rem;
+  max-height: 28.375rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+}
+
+.diplo__main::-webkit-scrollbar { 
+  display: none;
+}
+
+.diplo__title {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 400; 
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.diplo__paragraph {
+  font-weight: 400; 
+  font-family: 'Roboto', sans-serif;
+  color: #49454F;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 0.25px;
+}
+
+.diplo__checklist {
+  margin: 1rem 0;
+}
+
+.diplo__checkitem {
+  margin-bottom: 1rem;
+  height: 2.813rem;
+}
+
+.diplo__checkitem > span:first-of-type {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; 
+  color: #21005D;
+}
+
+.diplo__checkitem > span:nth-of-type(2) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; 
+  color: #000000;
+  font-size: 0.688rem;
+}
+
+.diplo__checkitem-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; 
+  color: #000000;
+  margin: 0 5rem 0 1rem;
+}
+
+.diplo__checkitem-elipse{
+  padding: 0.5rem 0.87rem;
+  background-color: #EADDFF;
+  border-radius: 10rem;
+}
+
+.diplo__checkitem-input {
+  margin-left: 1rem;
+  top: 0.5rem;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #6750A4;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.diplo__checkitem-input:checked:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  background-color: #6750A4;
+}
+
+.diplo__checkitem-input:checked {
+  background-color: #6750A4;
+}
+
+.diplo__hr{
+  border: none !important;
+  height: 1px !important;
+  background-color: #CAC4D0 !important;
+  margin: 20px 0 !important; 
+}
+
+.diplo__btn-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 0 1rem 0;
+}
+
+.btn-action {
+  color: #6750A4;
+  font-family: 'Inter';
+  font-weight: 500; 
+  font-size: 0.875rem;
+  padding-left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-action:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) { 
+  .diplo__main {
+    padding: 1rem;
+  }
+
+  .diplo__title {
+    font-size: 1.3em;
+  }
+  
+  .diplo__btn-actions {
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  .btn-action {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .diplo__title {
+    font-size: 1.2em;
+  }
+  
+  .diplo__checkitem-label {
+    margin: 0 2.8rem 0 2; 
+  }
+
+  .diplo__btn-actions {
+    margin: 2rem 0 1rem 0;
+  }
+}

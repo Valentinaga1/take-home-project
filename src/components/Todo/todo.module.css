@@ -1,0 +1,43 @@
+.todo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.todo__input[type="number"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo__input[type="number"]::placeholder {
+  color: #888;
+}
+
+.todo__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo__list-item {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-completed {
+  color: mediumseagreen;
+}
+
+.todo-not-completed {
+  color: crimson;
+}

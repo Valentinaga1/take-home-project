@@ -5,13 +5,11 @@ const Index = ({ initialData }) => {
   const [todos, setTodos] = useState(initialData);
 
   const fetchData = async (count) => {
-    console.log("count", count);
     let fetchedData = [];
     for (let i = 0; i < count; i++) {
       const randomID = Math.floor(Math.random() * 100) + 1;
       const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${randomID}`);
       const data = await res.json();
-      console.log("data", data);
       fetchedData.push(data);
     }
 
@@ -21,10 +19,8 @@ const Index = ({ initialData }) => {
       }
       return a.completed ? 1 : -1;
     });
-    console.log("fetchedData", fetchedData);
     setTodos(fetchedData);
   };
-  console.log("todos", todos);
   return (
     <Todo  fetchData={fetchData} todos={todos}/>
   );
